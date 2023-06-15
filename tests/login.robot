@@ -10,7 +10,7 @@ Test Teardown     Finish Session
 Deve logar com sucesso
     
     Submit login form    qa    xperience
-    Pop up should be     Suas credenciais são boas :)
+    Pop up should be     Suas credenciais são válidas :)
 
 Não deve logar se a senha for incorreta
     [Tags]        inv_pass
