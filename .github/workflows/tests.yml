@@ -22,3 +22,10 @@ jobs:
       run: rfbrowser init
     - name: Run your tests
       run: robot -d ./logs tests
+    - name: Publish Robot Report
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: Robot-Reports
+        path: logs/
+        retention-days: 30
